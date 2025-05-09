@@ -1,7 +1,7 @@
 import React from 'react'
 import Item from '../Items/Item'
 import './NewCollection.css'
-import new_collection from '../Assests/new_collections'
+import new_collection from '../Assests/new_collections';
 
 function NewCollection() {
   return (
