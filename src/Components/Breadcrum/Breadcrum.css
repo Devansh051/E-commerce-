@@ -16,3 +16,13 @@
     margin-top: 130px;
     text-transform: capitalize;
 }
+
+.breadcrum a {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.breadcrum a:hover {
+  text-decoration: underline;
+}
+
