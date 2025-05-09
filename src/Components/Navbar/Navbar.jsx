@@ -26,7 +26,7 @@ function Navbar() {
         </ul>
 
         <div className='nav-login-cart'>
-            <NavLink style={{textDecoration: 'none', color:'inherit'}} to='/login'><button>Login</button></NavLink>
+            <NavLink  style={{textDecoration: 'none', color:'inherit'}} to='/login'><button className='login-btn'>Login</button></NavLink>
             <NavLink style={{textDecoration: 'none', color:'inherit'}} to='/cart'><img src={cart_icon} alt='cart'></img></NavLink>
             <div className='nav-cart-count'>{getTotalCartItem()}</div>
         </div>

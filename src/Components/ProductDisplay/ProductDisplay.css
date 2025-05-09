@@ -93,6 +93,19 @@
     border: 1px solid #ebebeb;
     cursor: pointer;
     border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sizes div:hover {
+    background: #ff4141;
+    color: white;
+    transform: scale(1.05);
+}
+
+.sizes div.selected {
+    background: #ff4141;
+    color: white;
+    border-color: #ff4141;
 }
 
 .product_right button{
@@ -106,6 +119,40 @@
     background-color: #FF4141;
     margin-bottom: 25px;
     border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_right button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 65, 65, 0.3);
+}
+
+.product_right button:active {
+    transform: translateY(0);
+}
+
+.product_right button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.product_right button:active::after {
+    width: 200px;
+    height: 200px;
 }
 
 .right-category{
@@ -115,4 +162,112 @@
 
 .heading-para{
     font-weight: 600;
+}
+
+.product_right button.success {
+    background-color: #4CAF50;
+    animation: successBounce 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.product_right button.success::before {
+    content: '✓';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    opacity: 0;
+    animation: checkmarkPop 0.5s ease-in-out forwards;
+}
+
+.product_right button.success::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    animation: rippleEffect 1s ease-out;
+}
+
+.success-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+    transform: translateX(0);
+    animation: slideIn 0.5s ease-out forwards, slideOut 0.5s ease-in forwards 2s;
+}
+
+.success-message::before {
+    content: '✓';
+    font-size: 20px;
+    animation: iconBounce 0.5s ease-in-out;
+}
+
+@keyframes successBounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+@keyframes checkmarkPop {
+    0% { 
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% { 
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% { 
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes rippleEffect {
+    0% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% { 
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateX(120%);
+        opacity: 0;
+    }
+}
+
+@keyframes iconBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
 }
