@@ -91,3 +91,10 @@
     background: red;
     color: white;
 }
+.login-btn:hover{
+    background: red;
+    color: white;
+    transition: 0.35s;
+    border: none;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2)
+}
