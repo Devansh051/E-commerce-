@@ -1,13 +1,13 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState } from 'react'
 import './ProductDisplay.css'
-import star_icon from  '../Assests/star_icon.png'
+import star_icon from '../Assests/star_icon.png'
 import star_dull from '../Assests/star_dull_icon.png'
 import { ShopContext } from '../../Context/ShopContext';
 
 function ProductDisplay(props) {
-    const {product} = props;
-    const {setsize} = useContext(ShopContext);
-    const {addToCart} = useContext(ShopContext);
+    const { product } = props;
+    const { setsize } = useContext(ShopContext);
+    const { addToCart } = useContext(ShopContext);
     const [selectedSize, setSelectedSize] = useState('');
     const [buttonText, setButtonText] = useState('ADD TO CART');
     const [isSuccess, setIsSuccess] = useState(false);
@@ -27,7 +27,7 @@ function ProductDisplay(props) {
         setIsSuccess(true);
         setButtonText('ADDED TO CART!');
         setShowSuccessMessage(true);
-        
+
         // Reset success state and button text after animation
         setTimeout(() => {
             setIsSuccess(false);
@@ -57,7 +57,7 @@ function ProductDisplay(props) {
                     </div>
 
                     <div className="display_image">
-                        <img src={product.image} alt="main_image"  className='productdisplay-main-img'/>
+                        <img src={product.image} alt="main_image" className='productdisplay-main-img' />
                     </div>
                 </div>
 
@@ -78,44 +78,44 @@ function ProductDisplay(props) {
                     </div>
 
                     <div className="product-discription">
-                        <p>A lightweight usualaly knitted, pullover shirt, close - fitting and with a round neckline and short sleeves, worn as an 
-                            undershirt or outer garment. 
+                        <p>A lightweight usualaly knitted, pullover shirt, close - fitting and with a round neckline and short sleeves, worn as an
+                            undershirt or outer garment.
                         </p>
                     </div>
 
                     <div className="product-size">
                         <h1>Select Size</h1>
                         <div className="sizes">
-                            <div 
-                                className={selectedSize === 'S' ? 'selected' : ''} 
+                            <div
+                                className={selectedSize === 'S' ? 'selected' : ''}
                                 onClick={() => handleSizeClick('S')}
                             >S</div>
-                            <div 
-                                className={selectedSize === 'M' ? 'selected' : ''} 
+                            <div
+                                className={selectedSize === 'M' ? 'selected' : ''}
                                 onClick={() => handleSizeClick('M')}
                             >M</div>
-                            <div 
-                                className={selectedSize === 'L' ? 'selected' : ''} 
+                            <div
+                                className={selectedSize === 'L' ? 'selected' : ''}
                                 onClick={() => handleSizeClick('L')}
                             >L</div>
-                            <div 
-                                className={selectedSize === 'XL' ? 'selected' : ''} 
+                            <div
+                                className={selectedSize === 'XL' ? 'selected' : ''}
                                 onClick={() => handleSizeClick('XL')}
                             >XL</div>
-                            <div 
-                                className={selectedSize === 'XXL' ? 'selected' : ''} 
+                            <div
+                                className={selectedSize === 'XXL' ? 'selected' : ''}
                                 onClick={() => handleSizeClick('XXL')}
                             >XXL</div>
                         </div>
                     </div>
 
-                    <button 
+                    <button
                         onClick={handleAddToCart}
                         className={isSuccess ? 'success' : ''}
                     >
                         {buttonText}
                     </button>
-                    <p className="right-category"><span className='heading-para'> Category : </span> {product.category === 'women'?  (<span>Women, T-shirt, Crop-top</span>) : (<span>Men, T-shirt, Hoodie</span>)}
+                    <p className="right-category"><span className='heading-para'> Category : </span> {product.category === 'women' ? (<span>Women, T-shirt, Crop-top</span>) : (<span>Men, T-shirt, Hoodie</span>)}
                     </p>
 
                     <p className="right-category"><span className='heading-para'>Tags : </span> Modern , Latest </p>
