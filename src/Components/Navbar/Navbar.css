@@ -9,11 +9,7 @@
     grid-template-columns: repeat(10, 1fr);
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding: 1rem 2rem;
-=======
-    padding: 0.5rem;
->>>>>>> 6dd07d427f91d5edd01af84e047ccd78c4d55ffe
+    padding: 1rem 3rem;
     box-shadow: 0 1px 3px -2px black;
     position: fixed;
     top: 0;
