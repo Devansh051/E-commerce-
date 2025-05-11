@@ -1,37 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.new-collection{
+.new-collection {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: auto;
-    margin-bottom: 140px;    
+    margin-bottom: 140px;
 }
 
-.new-collection h1{
-    font-size: 48px;
+.new-collection h1 {
+    font-size: 6.5vmin;
     font-weight: 600;
     color: #171717;
 }
 
-.new-collection hr{
-    width: 200px;
-    height: 8px;
+.new-collection hr {
+    width: 35vmin;
+    height: 0.75vmin;
     border-radius: 10px;
     background: #252525;
 }
 
-.collections{
+.collections {
     display: flex;
-    margin:  0 20px;    
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
-   
+
 }
