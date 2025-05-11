@@ -5,15 +5,15 @@
 }
 
 .nav-bar {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(10, 1fr);
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 1rem 2rem;
     box-shadow: 0 1px 3px -2px black;
     position: fixed;
     top: 0;
-    width: 100dvw;
+    width: 100vw;
     background-color: white;
     /* Ensure the background color is set */
     z-index: 1000;
@@ -53,7 +53,7 @@
 
 .nav-logo p {
     color: #171717;
-    font-size: 5vmin;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -144,6 +144,7 @@
 
     #hamburger {
         display: flex;
+        margin: 1rem 1.5rem;    
     }
 
     .nav-logo {

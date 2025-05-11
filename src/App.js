@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer'
 import men_banner from './Components/Assests/banner_mens.png'
 import women_banner from './Components/Assests/banner_women.png'
 import kids_banner from './Components/Assests/banner_kids.png'
-import NewCollection from './Components/New Collection/NewCollection';
+
 
 
 
