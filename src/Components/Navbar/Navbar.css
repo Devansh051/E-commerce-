@@ -9,7 +9,7 @@
     grid-template-columns: repeat(10, 1fr);
     justify-content: space-around;
     align-items: center;
-    padding: 16px;
+    padding: 0.5rem;
     box-shadow: 0 1px 3px -2px black;
     position: fixed;
     top: 0;
@@ -104,6 +104,7 @@
 }
 
 .nav-cart {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -115,15 +116,16 @@
 }
 
 .nav-cart-count {
-    height: 1.25rem;
+    position: absolute;
+    top: -0.5vmin;
+    right: -1.5vmin;
+    height: 3.5vmin;
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -34px;
-    margin-left: -53px;
-    border-radius: 11px;
-    font-size: 14px;
+    border-radius: 50%;
+    font-size: 2.5vmin;
     background: red;
     color: white;
 }
@@ -136,7 +138,7 @@
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2)
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 
     .nav-bar {
         grid-template-columns: repeat(3, 1fr);

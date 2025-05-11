@@ -1,74 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 5vmin;
     margin-bottom: 30px;
 }
 
-.footer-logo{
+.footer-logo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 4.5vmin;
 }
 
-.footer-logo p{
+.footer-logo img {
+    height: 15vmin;
+}
+
+.footer-logo p {
     color: #383838;
-    font-size: 46px;
+    font-size: 6.5vmin;
     font-weight: 700;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 4.5vmin;
     color: #252525;
-    font-size: 20px;
+    font-size: 2.75vmin;
 }
 
-.footer-links li{
+.footer-links li {
     cursor: pointer;
 }
 
-.footer-social-icon{
+.footer-social-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 2.75vmin;
     width: 100%;
 }
 
-.footer-icons-container{
+.footer-icons-container {
     display: flex;
-    gap: 25px;
+    gap: 3.5vmin;
     padding: 10px;
     padding-bottom: 6px;
     cursor: pointer;
 }
 
-.footer-copyright{
+.footer-icons-container img {
+    height: 5vmin;
+}
+
+.footer-copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    font-size: 2.5vmin;
     width: 100%;
     color: #1a1a1a;
 }
 
-.footer-copyright hr{
+.footer-copyright hr {
     width: 80%;
     border: none;
     border-radius: 10px;
     height: 3px;
     background-color: #c7c7c7;
 }
-
-
-

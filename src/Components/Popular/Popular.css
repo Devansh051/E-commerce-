@@ -1,35 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.popular{
+.popular {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: auto;
-    margin-bottom: 140px; 
+    margin-bottom: 140px;
 }
 
-.popular h1{
-    font-size: 48px;
+.popular h1 {
+    font-size: 6.5vmin;
     font-weight: 600;
     color: #171717;
 }
 
-.popular hr{
-    width: 200px;
-    height: 8px;
+.popular hr {
+    width: 35vmin;
+    height: 0.75vmin;
     border-radius: 10px;
     background: #252525;
 }
 
-.popular-item{
+.popular-item {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
-   
+    justify-content: space-around;
 }
