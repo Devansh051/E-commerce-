@@ -1,40 +1,40 @@
-.cartitems{
-    margin: 120px 140px;
+.cartitems {
+    margin: 15vmin;
 }
 
-.cartitems hr{
+.cartitems hr {
     height: 3px;
     background-color: #e2e2e2;
     border: 0;
 }
 
-.cartitems-format-main{
+.cartitems-format-main {
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 75px;
-    padding: 13px 0 ;  
+    gap: 12vmin;
+    padding-block: 2.5vmin;
     color: #454545;
-    font-size: 18px;
+    font-size: 3vmin;
     font-weight: 600;
 }
 
-.cartitems-format{
-    font-size: 17px;
+.cartitems-format {
+    font-size: 3vmin;
     font-weight: 500;
 }
 
-.carticon-product-icon{
+.carticon-product-icon {
     height: 82px;
 }
 
-.cartitem-remove-icon{
+.cartitem-remove-icon {
     width: 15px;
     margin: 0 30px;
     cursor: pointer;
 }
 
-.cartitems-quantity{
+.cartitems-quantity {
     width: 64px;
     height: 45px;
     border: 2px solid #ebebeb;
@@ -42,32 +42,32 @@
     margin: 0 20px;
 }
 
-.cartitems-format p{
+.cartitems-format p {
     margin: 0 10px;
 }
 
-.cartitems-down{
+.cartitems-down {
     display: flex;
-    margin: 100px 0 ;
+    margin: 100px 0;
     margin-bottom: 0px;
 
 }
 
-.cartitems-total{
+.cartitems-total {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-right: 140px;
-    gap: 30px;  
+    gap: 30px;
 }
 
-.cartitem-total-item{
+.cartitem-total-item {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 ;
+    padding: 15px 0;
 }
 
-.cartitems-total button{
+.cartitems-total button {
     width: 250px;
     height: 62px;
     outline: none;
@@ -81,17 +81,17 @@
 }
 
 
-.cartitems-promocode{
+.cartitems-promocode {
     flex: 1;
     font-size: 16px;
     font-weight: 500;
 }
 
-.cartitems-promocode p{
+.cartitems-promocode p {
     color: #555;
 }
 
-.promobox{
+.promobox {
     width: 504px;
     margin-top: 15px;
     padding-left: 20px;
@@ -99,7 +99,7 @@
     background-color: #eaeaea;
 }
 
-.promobox input{
+.promobox input {
     border: none;
     outline: none;
     background: transparent;
@@ -108,7 +108,7 @@
     height: 50px;
 }
 
-.promobox button{
+.promobox button {
     width: 170px;
     height: 58px;
     font-size: 16px;
