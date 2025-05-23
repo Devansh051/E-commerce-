@@ -7,7 +7,7 @@
 .hero{
     margin-top: 90px;
     height: 100vh;
-    background: linear-gradient(180deg, #ea05fa 0%, rgba(225, 255, 234, 0.13) 60%);
+    background: linear-gradient(180deg, #ea05fa 0%, rgba(225, 255, 234, 0.13) 50%);
     display: flex;
     text-transform: capitalize;
 }
@@ -19,7 +19,7 @@
     justify-content: center;
     gap: 20px;
     line-height: 1.1;
-    padding-left: 180px;
+    padding-left: 100px;
 }
 
 .hero-left h2{

@@ -1,0 +1,40 @@
+.breadcrumb {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.breadcrumb .separator {
+  margin: 0 8px;
+  color: #6c757d;
+}
+
+.breadcrumb .current {
+  color: #6c757d;
+  font-weight: 500;
+} 
